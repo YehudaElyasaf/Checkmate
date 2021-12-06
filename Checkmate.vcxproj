@@ -24,6 +24,7 @@
     <ProjectGuid>{488e2592-02a2-453e-9795-b203c95166a8}</ProjectGuid>
     <RootNamespace>Checkmate</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Ex1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

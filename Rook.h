@@ -1,7 +1,8 @@
 #pragma once
 #include "Piece.h"
-class Rook :
-    public Piece
+class Rook : public Piece
 {
+public:
+	Rook(bool color);
+	bool validMove(const Position& src, const Position& dst) const override;
 };
-
