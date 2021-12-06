@@ -3,5 +3,5 @@
 class Rook : public Piece
 {
 public:
-	int validMove(const Board& board, const Position& src, const Position& dst) const override;
+	bool validMove(const Position& src, const Position& dst) const override;
 };

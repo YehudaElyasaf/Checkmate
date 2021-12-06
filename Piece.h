@@ -9,6 +9,6 @@ private:
 	bool _color;
 public:
 	virtual ~Piece();
-	virtual int validMove(const Board& board, const Position& src, const Position& dst) const = 0 ;
+	virtual bool validMove(const Position& src, const Position& dst) const = 0 ;
 };
 
