@@ -1,4 +1,5 @@
 #pragma once
+#include "Position.h"
 
 #define WHITE 0
 #define BLACK 1

@@ -1,5 +1,4 @@
 #pragma once
-#include "Position.h"
 #include "Piece.h"
 #include<iostream>
 
