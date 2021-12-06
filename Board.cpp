@@ -48,10 +48,18 @@ Board::Board(const std::string& formatString) {
 				break;
 			case '#':
 				_board[i][j] == nullptr;
+			}
 		}
 	}
 }
-Board::~Board();
+Board::~Board() {
+
+	for (int i = 0; i < BOARD_SIZE; i++) {
+		for (int j = 0; j < BOARD_SIZE; j++) {
+			delete _board[i][j];
+		}
+	}
+}
 void Board::movePiece(const Position& src, const Position& dst);
 std::string Board::getBoard();
 Piece* Board::operator[] (const Position&);
