@@ -9,7 +9,8 @@ enum types {
 	ROOK_WHITE = 'R', ROOK_BLACK = 'r',
 	KNIGHT_WHITE = 'N', KNIGHT_BLACK = 'n',
 	BISHOP_WHITE = 'B', BISHOP_BLACK = 'b',
-	PAWN_WHITE = 'P', PAWN_BLACK = 'p' };
+	PAWN_WHITE = 'P', PAWN_BLACK = 'p',
+	NULL_PLAYER = '#' };
 
 class Piece
 {
