@@ -6,7 +6,7 @@
 
 class Piece
 {
-private:
+protected:
 	bool _color;
 public:
 	Piece(bool color);

@@ -7,3 +7,9 @@ bool Bishop::validMove(const Position& src, const Position& dst) const {
 	return std::abs(src.getX() - dst.getX()) ==
 		std::abs(src.getY() - dst.getY());
 }
+char Bishop::getType() const{
+	if (this->_color == WHITE)
+		return 'B';
+	else
+		return 'b';
+}
