@@ -4,7 +4,7 @@
 #define BLACK_START 2
 Pawn::Pawn(bool color): Piece(color) {}
 
-bool Pawn::validMove(const Position& src, const Position& dest) const
+bool Pawn::validMove(const Board&, const Position& src, const Position& dest) const
 {
 	if (_color == WHITE)
 	{

@@ -5,7 +5,7 @@ class Knight :
 {
 public:
     Knight(bool color);
-    bool validMove(const Position& src, const Position& dest) const override;
+    bool validMove(const Board&, const Position& src, const Position& dst) const override;
     char getType() const override;
 };
 

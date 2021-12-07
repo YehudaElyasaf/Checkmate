@@ -3,7 +3,7 @@
 
 King::King(bool color) : Piece(color) {}
 
-bool King::validMove(const Position& src, const Position& dest) const
+bool King::validMove(const Board&, const Position& src, const Position& dest) const
 {
 	return abs(src.getX() - dest.getX()) <= 1 && abs(src.getY() - dest.getY()) <= 1;
 }

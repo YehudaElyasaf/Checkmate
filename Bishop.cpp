@@ -3,7 +3,7 @@
 
 Bishop::Bishop(bool color) :Piece(color) {}
 
-bool Bishop::validMove(const Position& src, const Position& dst) const {
+bool Bishop::validMove(const Board&, const Position& src, const Position& dst) const {
 	return std::abs(src.getX() - dst.getX()) ==
 		std::abs(src.getY() - dst.getY());
 }
