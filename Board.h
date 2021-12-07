@@ -4,7 +4,7 @@
 
 #define BOARD_SIZE 8
 #define NULL_PLAYER '#'
-
+class Piece;
 class Board
 {
 private:
