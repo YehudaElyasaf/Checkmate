@@ -7,5 +7,6 @@ class Queen :public Bishop,public Rook
 {
 	Queen(bool color);
 	bool validMove(const Position& src, const Position& dst) const override;
+	char getType() const override;
 };
 
