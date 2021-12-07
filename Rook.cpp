@@ -10,12 +10,14 @@ bool Rook::validMove(const Board& board, const Position& src, const Position& ds
 				if (board[Position(src.getX(), i)] != nullptr)
 					return false;
 			}
+			return true;
 		}
 		else {
 			for (int i = src.getY() - 1; i > dst.getY(); i--) {
 				if (board[Position(src.getX(), i)] != nullptr) 
 					return false;
 			}
+			return true;
 		}
 	}
 	else if (src.getY() == dst.getY()) {
@@ -24,12 +26,14 @@ bool Rook::validMove(const Board& board, const Position& src, const Position& ds
 				if (board[Position(i, src.getY())] != nullptr)
 					return false;
 			}
+			return true;
 		}
 		else {
 			for (int i = src.getX() - 1; i > dst.getX(); i--) {
 				if (board[Position(i, src.getY())] != nullptr)
 					return false;
 			}
+			return true;
 		}
 	}
 
