@@ -9,7 +9,7 @@ bool Rook::validMove(const Position& src, const Position& dst) const {
 
 char Rook::getType() const {
 	if (this->_color == WHITE)
-		return 'R';
+		return ROOK_WHITE;
 	else
-		return 'r';
+		return ROOK_BLACK;
 }

@@ -9,7 +9,7 @@ bool Bishop::validMove(const Position& src, const Position& dst) const {
 }
 char Bishop::getType() const{
 	if (this->_color == WHITE)
-		return 'B';
+		return BISHOP_WHITE;
 	else
-		return 'b';
+		return BISHOP_BLACK;
 }

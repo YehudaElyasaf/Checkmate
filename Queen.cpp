@@ -7,7 +7,7 @@ bool Queen::validMove(const Position& src, const Position& dst) const {
 }
 char Queen::getType() const {
 	if (this->_color == WHITE)
-		return 'Q';
+		return QUEEN_WHITE;
 	else
-		return 'q';
+		return QUEEN_BLACK;
 }

@@ -11,7 +11,7 @@ char Knight::getType() const
 {
 	if (_color == WHITE)
 	{
-		return 'N';
+		return KNIGHT_WHITE;
 	}
-	return 'n';
+	return KNIGHT_BLACK;
 }

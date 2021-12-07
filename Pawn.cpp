@@ -31,7 +31,7 @@ char Pawn::getType() const
 {
 	if (_color == WHITE)
 	{
-		return 'P';
+		return PAWN_WHITE;
 	}
-	return 'p';
+	return PAWN_BLACK;
 }

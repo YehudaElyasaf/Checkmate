@@ -12,7 +12,7 @@ char King::getType() const
 {
 	if (_color == WHITE)
 	{
-		return 'K';
+		return KING_WHITE;
 	}
-	return 'k';
+	return KING_BLACK;
 }
