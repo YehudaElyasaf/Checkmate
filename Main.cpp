@@ -3,7 +3,7 @@
 
 int main() {
 	Game game;
-	std::cout << game.move("e2e4");
+	std::cout << game.move("e2f3");
 
 	std::cin;
 	return 0;

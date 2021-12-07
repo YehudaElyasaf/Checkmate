@@ -62,9 +62,9 @@ Board::~Board() {
 }
 
 void Board::movePiece(const Position& src, const Position& dst){
-	_board[dst.getX()][dst.getY()] = _board[src.getX()][src.getY()];
+	_board[dst.getY()][dst.getX()] = _board[src.getY()][src.getX()];
 	delete _board[src.getX()][src.getY()];
-	_board[src.getX()][src.getY()] = nullptr;
+	_board[src.getY()][src.getX()] = nullptr;
 }
 
 std::string Board::getBoard() {
