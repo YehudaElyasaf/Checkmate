@@ -18,7 +18,7 @@ protected:
 public:
 	Piece(bool color);
 	virtual ~Piece();
-	virtual bool validMove(const Board&, const Position& src, const Position& dst) const = 0 ;
+	virtual bool validMove(const Board& board, const Position& src, const Position& dst) const = 0 ;
 	virtual char getType() const = 0;
 };
 

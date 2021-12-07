@@ -5,7 +5,7 @@ class Pawn :
 {
 public:
     Pawn(bool color);
-    bool validMove(const Board&, const Position& src, const Position& dst) const override;
+    bool validMove(const Board& board, const Position& src, const Position& dst) const override;
     char getType() const override;
 private:
     bool diagonalMove(const Position& src, const Position& dest) const;
