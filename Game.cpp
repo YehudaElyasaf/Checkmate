@@ -1,11 +1,11 @@
 #include "Game.h"
 #define BOARD_STRING_END 64
 
-enum moveTypes {VALID, CHECK, INVALID_SRC, INVALID_DEST, CAUSE_CHECK, INVALID_INDEX, INVALID_MOVE, SAME_SRC_AND_DEST, CHECK_MATE };
+enum moveTypes { VALID, CHECK, INVALID_SRC, INVALID_DEST, CAUSE_CHECK, INVALID_INDEX, INVALID_MOVE, SAME_SRC_AND_DEST, CHECK_MATE };
 
-Game::Game(const string& formatString): _board(formatString.substr(0, BOARD_STRING_END)), _turn(formatString[BOARD_STRING_END] - '0') {}
+Game::Game(const string& formatString) : _board(formatString.substr(0, BOARD_STRING_END)), _turn(formatString[BOARD_STRING_END] - '0') {}
 
-Game::Game(): Game("RNBKQBNRPPPPPPPP################################pppppppprnbkqbnr1") {}
+Game::Game() : Game("RNBKQBNRPPPPPPPP################################pppppppprnbkqbnr1") {}
 
 int Game::move(const string& moveString)
 {
@@ -45,7 +45,8 @@ Position Game::findPiece(char type) const
 	{
 		for (j = 0; j < BOARD_SIZE; j++)
 		{
-			found = _board[Position(i, j)]->getType() == type;
+			found = _board[Position(i, j)] != nullptr &&
+				_board[Position(i, j)]->getType() == type;
 		}
 	}
 	return Position(i, j);
