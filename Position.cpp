@@ -1,10 +1,8 @@
 #include "Position.h"
 
-Position::Position(const std::string& posString)
-{
-	_x = posString[0] - 'a';
-	_y = posString[1] - '1';
-}
+Position::Position(const std::string& posString): Position(posString[0] - 'a', posString[1] - '1') {}
+
+Position::Position(int x, int y): _x(x), _y(y) {}
 
 int Position::getX() const
 {
