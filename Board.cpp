@@ -47,7 +47,7 @@ Board::Board(const std::string& formatString) {
 				_board[i][j] = new Pawn(BLACK);
 				break;
 			case '#':
-				_board[i][j] == nullptr;
+				_board[i][j] = nullptr;
 			}
 		}
 	}
