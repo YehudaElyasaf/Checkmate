@@ -60,6 +60,8 @@ Board::~Board() {
 		}
 	}
 }
-void Board::movePiece(const Position& src, const Position& dst);
-std::string Board::getBoard();
-Piece* Board::operator[] (const Position&);
+void Board::movePiece(const Position& src, const Position& dst){}
+std::string Board::getBoard(){}
+Piece* Board::operator[] (const Position& position) {
+	return _board[position.getY()][position.getX()];
+}
