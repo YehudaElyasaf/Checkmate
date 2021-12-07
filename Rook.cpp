@@ -7,3 +7,7 @@ bool Rook::validMove(const Position& src, const Position& dst) const {
 		src.getY() == dst.getY();
 } 
 
+
+
+
+
