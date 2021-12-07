@@ -78,6 +78,7 @@ std::string Board::getBoard() {
 				formatString += _board[i][j]->getType();
 		}
 	}
+	return formatString;
 }
 Piece* Board::operator[] (const Position& position) const{
 	return _board[position.getY()][position.getX()];

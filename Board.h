@@ -3,7 +3,7 @@
 #include<iostream>
 
 #define BOARD_SIZE 8
-
+class Piece;
 class Board
 {
 private:

@@ -11,7 +11,7 @@ enum types {
 	BISHOP_WHITE = 'B', BISHOP_BLACK = 'b',
 	PAWN_WHITE = 'P', PAWN_BLACK = 'p',
 	NULL_PLAYER = '#' };
-
+class Board;
 class Piece
 {
 protected:
