@@ -60,7 +60,13 @@ Board::~Board() {
 		}
 	}
 }
-void Board::movePiece(const Position& src, const Position& dst){}
+
+void Board::movePiece(const Position& src, const Position& dst){
+	_board[dst.getX()][dst.getY()] = _board[src.getX()][src.getY()];
+	delete _board[src.getX()][src.getY()];
+	_board[src.getX()][src.getY()] = 0;
+}
+
 std::string Board::getBoard() {
 	std::string formatString = "";
 

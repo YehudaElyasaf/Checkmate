@@ -3,10 +3,11 @@
 #include "Bishop.h"
 #include "Rook.h"
 
-class Queen :public Bishop,public Rook
+class Queen :virtual Bishop,virtual Rook, public Piece
 {
+public:
 	Queen(bool color);
-	bool validMove(const Board&, const Position& src, const Position& dst) const override;
+	bool validMove(const Board& board, const Position& src, const Position& dst) const override;
 	char getType() const override;
 };
 
