@@ -46,7 +46,7 @@ Board::Board(const std::string& formatString) {
 			case 'p':
 				_board[i][j] = new Pawn(BLACK);
 				break;
-			case '#':
+			case NULL_PLAYER:
 				_board[i][j] = nullptr;
 			}
 		}
@@ -61,7 +61,18 @@ Board::~Board() {
 	}
 }
 void Board::movePiece(const Position& src, const Position& dst){}
-std::string Board::getBoard(){}
+std::string Board::getBoard() {
+	std::string formatString = "";
+
+	for (int i = 0; i < BOARD_SIZE; i++) {
+		for (int j = 0; j < BOARD_SIZE; j++) {
+			if (_board[i][j] == nullptr)
+				formatString += NULL_PLAYER;
+			else
+				formatString += _board[i][j]->getType();
+		}
+	}
+}
 Piece* Board::operator[] (const Position& position) {
 	return _board[position.getY()][position.getX()];
 }
