@@ -4,13 +4,20 @@
 #define BLACK_START 2
 Pawn::Pawn(bool color): Piece(color) {}
 
-bool Pawn::validMove(const Board&, const Position& src, const Position& dest) const
+bool Pawn::validMove(const Board& board, const Position& src, const Position& dest) const
 {
-	if (_color == WHITE)
+	if (diagonalMove(src, dest) && board[dest])
 	{
-		return ((src.getY() == WHITE_START && dest.getY() == WHITE_START - 2) || src.getY() - dest.getY() == 1);
+		return (board[dest]->getType() <= 'Z') != (board[src]->getType() <= 'Z');//color of dest must be different from color of src 
 	}
-	return ((src.getY() == BLACK_START && dest.getY() == BLACK_START + 2) || src.getY() - dest.getY() == -1);
+	else
+	{
+		if (_color == WHITE)
+		{
+			return ((src.getY() == WHITE_START && dest.getY() == WHITE_START - 2) || src.getY() - dest.getY() == 1);
+		}
+		return ((src.getY() == BLACK_START && dest.getY() == BLACK_START + 2) || src.getY() - dest.getY() == -1);
+	}
 }
 
 bool Pawn::diagonalMove(const Position& src, const Position& dest) const
