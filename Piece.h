@@ -12,5 +12,6 @@ public:
 	Piece(bool color);
 	virtual ~Piece();
 	virtual bool validMove(const Position& src, const Position& dst) const = 0 ;
+	virtual char getType() const = 0;
 };
 
