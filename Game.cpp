@@ -78,15 +78,15 @@ int Game::moveType(const Position& src, const Position& dest) const
 	{
 		return SAME_SRC_AND_DEST;
 	}
+	if (_board[src] == nullptr || isWhite(_board[src]->getType()) != _turn)
+	{
+		return INVALID_SRC;
+	}
 	if (!(_board[src]->validMove(_board, src, dest)))
 	{
 		return INVALID_MOVE;
 	}
-	if (isWhite(_board[src]->getType()) != _turn)
-	{
-		return INVALID_SRC;
-	}
-	if (isWhite(_board[dest]->getType()) == _turn)
+	if (_board[dest] != nullptr && isWhite(_board[dest]->getType()) == _turn)
 	{
 		return INVALID_DEST;
 	}
