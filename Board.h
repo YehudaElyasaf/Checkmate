@@ -14,6 +14,6 @@ public:
 	~Board();
 	void movePiece(const Position& src, const Position& dst);
 	std::string getBoard();
-	Piece* operator[] (const Position&);
+	Piece* operator[] (const Position&) const;
 };
 

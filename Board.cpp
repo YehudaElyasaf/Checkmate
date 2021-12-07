@@ -73,6 +73,6 @@ std::string Board::getBoard() {
 		}
 	}
 }
-Piece* Board::operator[] (const Position& position) {
+Piece* Board::operator[] (const Position& position) const{
 	return _board[position.getY()][position.getX()];
 }
