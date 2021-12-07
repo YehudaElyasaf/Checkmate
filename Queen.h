@@ -3,7 +3,7 @@
 #include "Bishop.h"
 #include "Rook.h"
 
-class Queen :public Bishop,public Rook, public Piece
+class Queen :virtual Bishop,virtual Rook, public Piece
 {
 public:
 	Queen(bool color);
