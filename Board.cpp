@@ -61,10 +61,22 @@ Board::~Board() {
 	}
 }
 
-void Board::movePiece(const Position& src, const Position& dst){
+void Board::movePiece(const Position& src, const Position& dst) {
 	_board[dst.getY()][dst.getX()] = _board[src.getY()][src.getX()];
 	delete _board[src.getX()][src.getY()];
 	_board[src.getY()][src.getX()] = nullptr;
+}
+void Board::printBoard() const {
+	for (int i = 0; i < BOARD_SIZE; i++) {
+		std::cout << "\t";
+		for (int j = 0; j < BOARD_SIZE; j++) {
+			if (_board[i][j])
+				std::cout << _board[i][j]->getType() << " ";
+			else
+				std::cout << ". ";
+		}
+		std::cout << "\n";
+	}
 }
 
 std::string Board::getBoard() {
@@ -80,6 +92,6 @@ std::string Board::getBoard() {
 	}
 	return formatString;
 }
-Piece* Board::operator[] (const Position& position) const{
+Piece* Board::operator[] (const Position& position) const {
 	return _board[position.getY()][position.getX()];
 }
