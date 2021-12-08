@@ -18,18 +18,23 @@ int Game::move(const string& moveString)
 	}
 	if (isCheck())
 	{
-		type = CHECK;
+		_turn = !_turn;
+		return CHECK;
 	}
 	else
 	{
 		_turn = !_turn;
 		if (isCheck())
 		{
-			type = CAUSE_CHECK;
+			_turn = !_turn;
+			_board.movePiece(dest, src);
+			return CAUSE_CHECK;
+		}
+		else
+		{
+			return VALID;
 		}
 	}
-	_turn = !_turn;
-	return type;
 }
 
 bool Game::isWhite(char type) const
