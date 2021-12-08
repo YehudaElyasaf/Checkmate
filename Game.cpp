@@ -32,7 +32,7 @@ int Game::move(const string& moveString)
 		}
 		else
 		{
-			return VALID;
+			return type;
 		}
 	}
 }
