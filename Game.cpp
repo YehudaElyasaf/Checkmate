@@ -43,6 +43,14 @@ int Game::move(const string& moveString)
 	}
 }
 
+string Game::guiStr() const
+{
+	string guiStr = _board.getBoard();
+	guiStr += ((int)_turn + '0');
+	return guiStr;
+
+}
+
 Position Game::findPiece(char type) const
 {
 	bool found = false;
