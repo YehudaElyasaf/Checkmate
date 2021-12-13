@@ -34,6 +34,10 @@ int Game::move(const string& moveString)
 		}
 		else
 		{
+			if (type != VALID)
+			{
+				_turn = !_turn;
+			}
 			return type;
 		}
 	}
