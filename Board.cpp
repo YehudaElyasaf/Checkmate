@@ -82,7 +82,7 @@ void Board::printBoard() const {
 	}
 }
 
-std::string Board::getBoard() {
+std::string Board::getBoard() const {
 	std::string formatString = "";
 
 	for (int i = 0; i < BOARD_SIZE; i++) {
