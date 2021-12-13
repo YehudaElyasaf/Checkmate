@@ -7,7 +7,8 @@ bool Rook::validMove(const Board& board, const Position& src, const Position& ds
 	Position endCheck(0, 0);
 
 	if (src.getX() == dst.getX())
-	{
+	{//move vertically
+		//swap src and dst if necessary
 		if (src.getY() < dst.getY()) {
 			startCheck = src;
 			endCheck = dst;
@@ -23,7 +24,9 @@ bool Rook::validMove(const Board& board, const Position& src, const Position& ds
 		}
 		return true;
 	}
-	else if (src.getY() == dst.getY()) {
+	else if (src.getY() == dst.getY())
+	{//move horizontally
+		//swap src and dst if necessary
 		if (src.getX() < dst.getX()) {
 			startCheck = src;
 			endCheck = dst;
