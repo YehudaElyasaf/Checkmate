@@ -2,7 +2,7 @@
 #include "Position.h"
 #include "Board.h"
 
-enum colors { WHITE, BLACK };
+enum colors { BLACK, WHITE };
 enum types {
 	KING_WHITE = 'K', KING_BLACK = 'k',
 	QUEEN_WHITE = 'Q', QUEEN_BLACK = 'q',
