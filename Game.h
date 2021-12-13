@@ -11,7 +11,6 @@ private:
 	Board _board;
 	bool _turn;
 	int moveType(const Position& src, const Position& dest) const;
-	bool isWhite(char type) const;
 	Position findPiece(char type) const;
 	bool isCheck() const;
 };

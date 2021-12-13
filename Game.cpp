@@ -39,11 +39,6 @@ int Game::move(const string& moveString)
 	}
 }
 
-bool Game::isWhite(char type) const
-{
-	return type <= 'Z';
-}
-
 Position Game::findPiece(char type) const
 {
 	bool found = false;
@@ -85,7 +80,7 @@ int Game::moveType(const Position& src, const Position& dest) const
 	{
 		return SAME_SRC_AND_DEST;
 	}
-	if (_board[src] == nullptr || isWhite(_board[src]->getType()) != _turn)
+	if (_board[src] == nullptr || _board[src]->getColor() != _turn)
 	{
 		return INVALID_SRC;
 	}
@@ -93,7 +88,7 @@ int Game::moveType(const Position& src, const Position& dest) const
 	{
 		return INVALID_MOVE;
 	}
-	if (_board[dest] != nullptr && isWhite(_board[dest]->getType()) == _turn)
+	if (_board[dest] != nullptr && _board[dest]->getColor() == _turn)
 	{
 		return INVALID_DEST;
 	}

@@ -21,6 +21,6 @@ public:
 	virtual ~Piece();
 	virtual bool validMove(const Board& board, const Position& src, const Position& dst) const = 0 ;
 	virtual char getType() const = 0;
-	char getColor() const;
+	bool getColor() const;
 };
 

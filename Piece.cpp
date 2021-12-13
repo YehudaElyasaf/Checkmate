@@ -3,7 +3,7 @@
 Piece::Piece(bool color) :_color(color) {}
 Piece::~Piece(){}
 
-char Piece::getColor() const
+bool Piece::getColor() const
 {
     return _color;
 }
