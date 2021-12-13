@@ -5,7 +5,8 @@
 
 int main() {
 	Game game;
-	char command[GUI_STRING_LENGTH];
+	char initCommand[GUI_INIT_STRING_LENGTH];
+	char command[GUI_STRING_LENGTH] = {'0', '\0'};
 	//connect to GUI
 	Pipe pipe;
 
@@ -14,13 +15,10 @@ int main() {
 		Sleep(ONE_SECOND);
 	} while (!pipe.connect());
 
-	strcpy(command, game.getGuiStr().c_str());
-	pipe.sendMessageToGraphics(command);
+	strncpy(initCommand, game.getGuiStr().c_str(), GUI_INIT_STRING_LENGTH);
+	pipe.sendMessageToGraphics(initCommand);
 	while (true) {
-		std::cout << "\n\ncommand: ";
-		game.move(pipe.getMessageFromGraphics());
-
-		strcpy(command, game.getGuiStr().c_str());
+		command[0] = game.move(pipe.getMessageFromGraphics());
 		pipe.sendMessageToGraphics(command);
 	}
 
