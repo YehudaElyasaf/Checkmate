@@ -62,12 +62,12 @@ Board::~Board() {
 }
 
 void Board::movePiece(const Position& src, const Position& dst) {
-	if (_board[dst.getY()][dst.getX()] == nullptr)
+	if (_board[dst.getY()][dst.getX()] != nullptr)
 	{
 		delete _board[dst.getY()][dst.getX()];
 	}
 	_board[dst.getY()][dst.getX()] = _board[src.getY()][src.getX()];
-	_board[src.getY()][src.getX()] = 0;
+	_board[src.getY()][src.getX()] = nullptr;
 }
 void Board::printBoard() const {
 	for (int i = 0; i < BOARD_SIZE; i++) {

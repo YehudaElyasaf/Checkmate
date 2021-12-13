@@ -13,6 +13,6 @@ private:
 	bool _turn;
 	int moveType(const Position& src, const Position& dest) const;
 	Position findPiece(char type) const;
-	bool isCheck() const;
+	bool isCheck(const Position& src, const Position& dest, bool turn) const;
 };
 
