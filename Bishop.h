@@ -1,6 +1,8 @@
 #pragma once
 #include "Piece.h"
 
+#define REMOVE_ZERO -1
+
 class Bishop : public Piece
 {
 public:
