@@ -5,20 +5,23 @@
 
 int main() {
 	Game game;
-
+	char command[GUI_STRING_LENGTH];
 	//connect to GUI
 	Pipe pipe;
-	if (!pipe.connect())
-	{
-		std::cerr << "Couldn't connect to GUI!\n";
-		return CONNECTION_ERROR;
-	}
 
-	pipe.sendMessageToGraphics(game.getGuiStr());
+	ShellExecute(NULL, NULL, "chessGraphics.exe", NULL, NULL, SW_SHOW);
+	do {
+		Sleep(ONE_SECOND);
+	} while (!pipe.connect());
+
+	strcpy(command, game.getGuiStr().c_str());
+	pipe.sendMessageToGraphics(command);
 	while (true) {
 		std::cout << "\n\ncommand: ";
-		std::cout << "Game returned " << game.move(pipe.getMessageFromGraphics());
-		pipe.sendMessageToGraphics(game.getGuiStr());
+		game.move(pipe.getMessageFromGraphics());
+
+		strcpy(command, game.getGuiStr().c_str());
+		pipe.sendMessageToGraphics(command);
 	}
 
 	pipe.close();
