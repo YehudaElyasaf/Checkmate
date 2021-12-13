@@ -62,15 +62,18 @@ Board::~Board() {
 }
 
 void Board::movePiece(const Position& src, const Position& dst) {
+	if (_board[dst.getY()][dst.getX()] == nullptr)
+	{
+		delete _board[dst.getY()][dst.getX()];
+	}
 	_board[dst.getY()][dst.getX()] = _board[src.getY()][src.getX()];
-	delete _board[src.getX()][src.getY()];
-	_board[src.getY()][src.getX()] = nullptr;
+	_board[src.getY()][src.getX()] = 0;
 }
 void Board::printBoard() const {
 	for (int i = 0; i < BOARD_SIZE; i++) {
 		std::cout << "\t";
 		for (int j = 0; j < BOARD_SIZE; j++) {
-			if (_board[i][j])
+			if (_board[i][j] != nullptr)
 				std::cout << _board[i][j]->getType() << " ";
 			else
 				std::cout << ". ";
