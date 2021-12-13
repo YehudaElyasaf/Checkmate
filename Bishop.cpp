@@ -5,7 +5,8 @@ Bishop::Bishop(bool color) :Piece(color) {}
 bool Bishop::validMove(const Board& board, const Position& src, const Position& dst) const {
 	Position startCheck(0, 0);
 	Position endCheck(0, 0);
-
+	
+	//swap src and dst if necessary
 	if (src.getY() < dst.getY()) {
 		startCheck = src;
 		endCheck = dst;
