@@ -2,7 +2,7 @@
 #include "Position.h"
 #include "Board.h"
 
-enum colors { WHITE, BLACK };
+enum colors { BLACK, WHITE };
 enum types {
 	KING_WHITE = 'K', KING_BLACK = 'k',
 	QUEEN_WHITE = 'Q', QUEEN_BLACK = 'q',
@@ -21,5 +21,6 @@ public:
 	virtual ~Piece();
 	virtual bool validMove(const Board& board, const Position& src, const Position& dst) const = 0 ;
 	virtual char getType() const = 0;
+	bool getColor() const;
 };
 
