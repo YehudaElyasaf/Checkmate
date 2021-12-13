@@ -7,7 +7,7 @@ public:
 	Game(const string& formatString);
 	Game();
 	int move(const string& moveString);
-	string guiStr() const;
+	string getGuiStr() const;
 private:
 	Board _board;
 	bool _turn;

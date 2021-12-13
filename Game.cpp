@@ -43,7 +43,7 @@ int Game::move(const string& moveString)
 	}
 }
 
-string Game::guiStr() const
+string Game::getGuiStr() const
 {
 	string guiStr = _board.getBoard();
 	guiStr += ((int)_turn + '0');
