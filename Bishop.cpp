@@ -19,7 +19,7 @@ bool Bishop::validMove(const Board& board, const Position& src, const Position& 
 	if (src.getX() - dst.getX() == src.getY() - dst.getY()) {
 		//move in / shape
 		for (int i = 1; startCheck.getX() + i < endCheck.getX(); i++) {
-			if (board[Position(startCheck.getX() + i, startCheck.getY() + 1)] != nullptr)
+			if (board[Position(startCheck.getX() + i, startCheck.getY() + i)] != nullptr)
 				return false;
 		}
 		return true;
@@ -27,8 +27,8 @@ bool Bishop::validMove(const Board& board, const Position& src, const Position& 
 	else if (src.getX() - dst.getX() == (src.getY() - dst.getY()) * REMOVE_ZERO) {
 		//move in \ shape
 
-		for (int i = 1; startCheck.getX() - i < endCheck.getX(); i--) {
-			if (board[Position(startCheck.getX() - i, startCheck.getY() + 1)] != nullptr)
+		for (int i = 1; startCheck.getX() - i > endCheck.getX(); i++) {
+			if (board[Position(startCheck.getX() - i, startCheck.getY() + i)] != nullptr)
 				return false;
 		}
 		return true;
