@@ -51,12 +51,14 @@ bool Game::isCheck(const Position& src, const Position& dest, bool turn) const
 	tempBoard.movePiece(src, dest);
 	bool check = false;
 	int type;
+	Piece* currPiece = nullptr;
 	Position kingPos = (turn == WHITE) ? findPiece(KING_BLACK) : findPiece(KING_WHITE);
 	for (size_t i = 0; i < BOARD_SIZE && !check; i++)
 	{
 		for (size_t j = 0; j < BOARD_SIZE && !check; j++)
 		{
-			check = (tempBoard[Position(j, i)]->getColor() == turn) && (!(tempBoard[Position(j, i)]->validMove(tempBoard, Position(j, i), kingPos)));
+			currPiece = tempBoard[Position(j, i)];
+			check = (currPiece != nullptr) && (currPiece->getColor() == turn) && currPiece->validMove(tempBoard, Position(j, i), kingPos);
 		}
 	}
 	return check;

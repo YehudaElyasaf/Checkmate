@@ -52,6 +52,63 @@ Board::Board(const std::string& formatString) {
 		}
 	}
 }
+
+Board::Board(const Board& other)
+{
+	for (size_t i = 0; i < BOARD_SIZE; i++)
+	{
+		for (size_t j = 0; j < BOARD_SIZE; j++)
+		{
+			if (other._board[i][j] == nullptr)
+			{
+				_board[i][j] = nullptr;
+			}
+			else
+			{
+				switch (other._board[i][j]->getType())
+				{
+				case 'K':
+					_board[i][j] = new King(WHITE);
+					break;
+				case 'k':
+					_board[i][j] = new King(BLACK);
+					break;
+				case 'Q':
+					_board[i][j] = new Queen(WHITE);
+					break;
+				case 'q':
+					_board[i][j] = new Queen(BLACK);
+					break;
+				case 'R':
+					_board[i][j] = new Rook(WHITE);
+					break;
+				case 'r':
+					_board[i][j] = new Rook(BLACK);
+					break;
+				case 'N':
+					_board[i][j] = new Knight(WHITE);
+					break;
+				case 'n':
+					_board[i][j] = new Knight(BLACK);
+					break;
+				case 'B':
+					_board[i][j] = new Bishop(WHITE);
+					break;
+				case 'b':
+					_board[i][j] = new Bishop(BLACK);
+					break;
+				case 'P':
+					_board[i][j] = new Pawn(WHITE);
+					break;
+				case 'p':
+					_board[i][j] = new Pawn(BLACK);
+					break;
+				}
+			}
+		}
+	}
+}
+
 Board::~Board() {
 
 	for (int i = 0; i < BOARD_SIZE; i++) {

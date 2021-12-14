@@ -10,6 +10,7 @@ private:
 	Piece* _board[BOARD_SIZE][BOARD_SIZE];
 public:
 	Board(const std::string& formatString);
+	Board(const Board& other);
 	~Board();
 	void movePiece(const Position& src, const Position& dst);
 	std::string getBoard() const;
