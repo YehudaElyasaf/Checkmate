@@ -44,35 +44,35 @@ void Game::calcualtePoints(const Position& dest) {
 	switch (_board[dest]->getType())
 	{
 	case QUEEN_BLACK:
-		_points[WHITE] += QUEEN_VALUE;
+		_points[BLACK] += QUEEN_VALUE;
 		break;
 	case ROOK_BLACK:
-		_points[WHITE] += ROOK_VALUE;
+		_points[BLACK] += ROOK_VALUE;
 		break;
 	case KNIGHT_BLACK:
-		_points[WHITE] += KNIGHT_VALUE;
+		_points[BLACK] += KNIGHT_VALUE;
 		break;
 	case BISHOP_BLACK:
-		_points[WHITE] += BISHOP_VALUE;
+		_points[BLACK] += BISHOP_VALUE;
 		break;
 	case PAWN_BLACK:
-		_points[WHITE] += PAWN_VALUE;
+		_points[BLACK] += PAWN_VALUE;
 		break;
 
 	case QUEEN_WHITE:
-		_points[BLACK] += QUEEN_VALUE;
+		_points[WHITE] += QUEEN_VALUE;
 		break;
 	case ROOK_WHITE:
-		_points[BLACK] += ROOK_VALUE;
+		_points[WHITE] += ROOK_VALUE;
 		break;
 	case KNIGHT_WHITE:
-		_points[BLACK] += KNIGHT_VALUE;
+		_points[WHITE] += KNIGHT_VALUE;
 		break;
 	case BISHOP_WHITE:
-		_points[BLACK] += BISHOP_VALUE;
+		_points[WHITE] += BISHOP_VALUE;
 		break;
 	case PAWN_WHITE:
-		_points[BLACK] += PAWN_VALUE;
+		_points[WHITE] += PAWN_VALUE;
 		break;
 	}
 }
