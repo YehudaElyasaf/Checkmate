@@ -31,7 +31,7 @@ string Game::getGuiStr() const
 
 }
 
-Position Game::findPiece(char type) const
+Position Game::findPiece(char type, const Board& board) const
 {
 	bool found = false;
 	int i, j;
@@ -39,7 +39,7 @@ Position Game::findPiece(char type) const
 	{
 		for (j = 0; j < BOARD_SIZE && !found; j++)
 		{
-			found = (_board[Position(j, i)] != nullptr) && (_board[Position(j, i)]->getType() == type);
+			found = (board[Position(j, i)] != nullptr) && (board[Position(j, i)]->getType() == type);
 		}
 	}
 	return Position(j - 1, i - 1);
@@ -52,7 +52,7 @@ bool Game::isCheck(const Position& src, const Position& dest, bool turn) const
 	bool check = false;
 	int type;
 	Piece* currPiece = nullptr;
-	Position kingPos = (turn == WHITE) ? findPiece(KING_BLACK) : findPiece(KING_WHITE);
+	Position kingPos = (turn == WHITE) ? findPiece(KING_BLACK, tempBoard) : findPiece(KING_WHITE, tempBoard);
 	for (size_t i = 0; i < BOARD_SIZE && !check; i++)
 	{
 		for (size_t j = 0; j < BOARD_SIZE && !check; j++)
