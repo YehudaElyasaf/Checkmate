@@ -12,7 +12,7 @@ private:
 	Board _board;
 	bool _turn;
 	int moveType(const Position& src, const Position& dest) const;
-	Position findPiece(char type, const Board& board) const;
+	Position findPiece(const char type, const Board& board) const;
 	bool isCheck(const Position& src, const Position& dest, bool turn) const;
 };
 

@@ -29,7 +29,7 @@ string Game::getGuiStr() const
 
 }
 
-Position Game::findPiece(char type, const Board& board) const
+Position Game::findPiece(const char type, const Board& board) const
 {
 	bool found = false;
 	int i, j;
