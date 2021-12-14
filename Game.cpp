@@ -20,21 +20,61 @@ int Game::move(const string& moveString)
 	int type = moveType(src, dest);
 	if (type == VALID || type == CHECK || type == CHECK_MATE)
 	{
+		printPoints(dest);
 		_board.movePiece(src, dest);
 		_turn = !_turn;
 	}
 
-	printPoints(type, dest);
 	return type;
 }
-void Game::printPoints(const int type, const Position& dest) {
-	if (type == VALID || type == CHECK)
-		calcualtePoints(type, dest);
+
+void Game::printPoints(const Position& dest) {
+	calcualtePoints(dest);
 
 	std::cout << "\t<---------------->" << std::endl;
 	std::cout << "\t BLACK's POINTS: " << _points[BLACK] << std::endl;
 	std::cout << "\t WHITE's POINTS: " << _points[WHITE] << std::endl;
 	std::cout << "\t<----------------->" << std::endl;
+}
+
+void Game::calcualtePoints(const Position& dest) {
+	if (_board[dest] == nullptr)
+		return;
+
+	switch (_board[dest]->getType())
+	{
+	case QUEEN_BLACK:
+		_points[WHITE] += QUEEN_VALUE;
+		break;
+	case ROOK_BLACK:
+		_points[WHITE] += ROOK_VALUE;
+		break;
+	case KNIGHT_BLACK:
+		_points[WHITE] += KNIGHT_VALUE;
+		break;
+	case BISHOP_BLACK:
+		_points[WHITE] += BISHOP_VALUE;
+		break;
+	case PAWN_BLACK:
+		_points[WHITE] += PAWN_VALUE;
+		break;
+
+	case QUEEN_WHITE:
+		_points[BLACK] += QUEEN_VALUE;
+		break;
+	case ROOK_WHITE:
+		_points[BLACK] += ROOK_VALUE;
+		break;
+	case KNIGHT_WHITE:
+		_points[BLACK] += KNIGHT_VALUE;
+		break;
+	case BISHOP_WHITE:
+		_points[BLACK] += BISHOP_VALUE;
+		break;
+	case PAWN_WHITE:
+		_points[BLACK] += PAWN_VALUE;
+		break;
+	}
 }
 
 string Game::getGuiStr() const
