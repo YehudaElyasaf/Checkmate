@@ -3,7 +3,7 @@
 
 enum moveTypes { VALID = '0', CHECK, INVALID_SRC, INVALID_DEST, CAUSE_CHECK, INVALID_INDEX, INVALID_MOVE, SAME_SRC_AND_DEST, CHECK_MATE };
 
-Game::Game(const string& formatString) : _board(formatString.substr(0, BOARD_STRING_END)), _turn(formatString[BOARD_STRING_END] - '0'){
+Game::Game(const string& formatString) : _board(formatString.substr(0, BOARD_STRING_END)), _turn(formatString[BOARD_STRING_END] - '0') {
 	_points[BLACK] = 0;
 	_points[WHITE] = 0;
 }
@@ -26,6 +26,15 @@ int Game::move(const string& moveString)
 
 	printPoints(type, dest);
 	return type;
+}
+void Game::printPoints(const int type, const Position& dest) {
+	if (type == VALID || type == CHECK)
+		calcualtePoints(type, dest);
+
+	std::cout << "\t<---------------->" << std::endl;
+	std::cout << "\t BLACK's POINTS: " << _points[BLACK] << std::endl;
+	std::cout << "\t WHITE's POINTS: " << _points[WHITE] << std::endl;
+	std::cout << "\t<----------------->" << std::endl;
 }
 
 string Game::getGuiStr() const

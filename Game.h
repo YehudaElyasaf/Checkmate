@@ -18,5 +18,6 @@ private:
 	int moveType(const Position& src, const Position& dest) const;
 	Position findPiece(const char type, const Board& board) const;
 	bool isCheck(const Position& src, const Position& dest, bool turn) const;
+	void printPoints(const int type, const Position& dest);
 };
 
