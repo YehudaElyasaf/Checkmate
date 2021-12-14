@@ -42,7 +42,7 @@ Position Game::findPiece(char type) const
 			found = (_board[Position(j, i)] != nullptr) && (_board[Position(j, i)]->getType() == type);
 		}
 	}
-	return Position(j, i);
+	return Position(j - 1, i - 1);
 }
 
 bool Game::isCheck(const Position& src, const Position& dest, bool turn) const
