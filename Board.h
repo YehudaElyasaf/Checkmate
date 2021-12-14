@@ -15,6 +15,5 @@ public:
 	void movePiece(const Position& src, const Position& dst);
 	std::string getBoard() const;
 	Piece* operator[] (const Position&) const;
-	void printBoard() const;
 };
 

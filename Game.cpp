@@ -9,7 +9,6 @@ Game::Game() : Game("RNBKQBNRPPPPPPPP################################pppppppprnb
 
 int Game::move(const string& moveString)
 {
-	_board.printBoard();
 	Position src(moveString.substr(0, 2));
 	Position dest(moveString.substr(2, 2));
 	int type = moveType(src, dest);
@@ -18,7 +17,6 @@ int Game::move(const string& moveString)
 		_board.movePiece(src, dest);
 		_turn = !_turn;
 	}
-	_board.printBoard();
 	return type;
 	
 }
