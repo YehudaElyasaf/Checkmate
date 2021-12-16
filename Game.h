@@ -28,5 +28,6 @@ private:
 	bool isCheck(const Position& src, const Position& dest, bool turn) const;
 	void printPoints(const Position& dest);
 	void calcualtePoints(const Position& dest);
+	bool isCheckMate() const;
 };
 

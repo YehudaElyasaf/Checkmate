@@ -23,6 +23,13 @@ int Game::move(const string& moveString)
 		printPoints(dest);
 		_board.movePiece(src, dest);
 		_turn = !_turn;
+		if (type == CHECK)
+		{
+			if (isCheckMate())
+			{
+				type = CHECK_MATE;
+			}
+		}
 	}
 
 	return type;
@@ -75,6 +82,39 @@ void Game::calcualtePoints(const Position& dest) {
 		_points[WHITE] += PAWN_VALUE;
 		break;
 	}
+}
+
+bool Game::isCheckMate() const
+{
+	int move;
+	bool cantMove = true, exit_sub_loop = false;
+	for (size_t i = 0; i < BOARD_SIZE && cantMove; i++)
+	{
+		exit_sub_loop = false;
+		for (size_t j = 0; j < BOARD_SIZE && cantMove; j++)
+		{
+			exit_sub_loop = false;
+			for (size_t k = 0; k < BOARD_SIZE && cantMove && !exit_sub_loop; k++)
+			{
+				for (size_t l = 0; l < BOARD_SIZE && cantMove && !exit_sub_loop; l++)
+				{
+					move = moveType(Position(i, j), Position(k, l));
+					if (move == INVALID_SRC)
+					{
+						exit_sub_loop = true;
+					}
+					else
+					{
+						if (move == VALID || move == CHECK)
+						{
+							cantMove = false;
+						}
+					}
+				}
+			}
+		}
+	}
+	return cantMove;
 }
 
 string Game::getGuiStr() const
