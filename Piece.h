@@ -17,9 +17,12 @@ class Piece
 protected:
 	bool _color;
 public:
+	//c'tor and d'tor
 	Piece(bool color);
 	virtual ~Piece();
+	//check if the move's path is valid to this specific piece and empty
 	virtual bool validMove(const Board& board, const Position& src, const Position& dst) const = 0 ;
+	//getters
 	virtual char getType() const = 0;
 	bool getColor() const;
 };

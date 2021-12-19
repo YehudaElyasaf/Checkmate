@@ -1,0 +1,655 @@
+[33mcommit 1ee864896cf827d154642011ab8562576e0d68bf[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Thu Dec 16 14:30:35 2021 +0200
+
+    comleted bonus checkmate
+
+[33mcommit bd65239eaac9005c89bc816584abaecfe40fd096[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 14 19:23:43 2021 +0200
+
+    inverted points adding (each player gets points on the other) because the GUI doesn't suitable to the real game (black is down)
+
+[33mcommit 5c9aa0c7b0ae6e783c3ec135b9037107a26365b5[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 14 17:58:27 2021 +0200
+
+    wrote a function to calculate the points
+
+[33mcommit 3f7b3466ca22f3205c22c13d7e27f6b3d37ab23d[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 14 16:15:02 2021 +0200
+
+    wrote function that prins the points of each player
+
+[33mcommit 50c187f23c18c839338dd441afd474e3e7d6b155[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 14 16:06:31 2021 +0200
+
+    added array that counts the points
+
+[33mcommit f1265f05fb629c981c5e809edb69194a94132b64[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 14 15:58:14 2021 +0200
+
+    added necessary const to findPiece()
+
+[33mcommit 23f9882fe3d336253e70d45fcc14f01020aa2ab7[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 14 15:54:26 2021 +0200
+
+    removed function printBoard
+
+[33mcommit 00ece5a80508e93ca2ac1f1b990a97711a7d4ba0[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 14 15:42:51 2021 +0200
+
+    added board parameter to findPiece
+
+[33mcommit 3dbcea03df0a7857e3a1161c28b4bca1be7ddd4e[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 14 15:18:59 2021 +0200
+
+    fixed Pawn movement (now can't jump over players)
+
+[33mcommit e1a090fc9a5a62504545c5bef92112a1b40842b0[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 14 14:57:05 2021 +0200
+
+    fixed findPiece
+
+[33mcommit 91245c6dc1f785215d12660c2365f14f7233c5b0[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 14 11:49:42 2021 +0200
+
+    added Board copy c'tor
+
+[33mcommit 3e2757e67f9f7aed3efa69a8c4722e899e656c47[m
+Merge: b733a02 17349a6
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 14 00:09:48 2021 +0200
+
+    Merge branch 'master' of https://gitlab.com/yehuda_elyasaf_advanced_programmin_2022/checkmateproject7
+
+[33mcommit b733a02acc4f6eae194ae0cea9f92241cdbd9435[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 14 00:09:29 2021 +0200
+
+    fixed check detection and move function
+
+[33mcommit 17349a62b5831cc1cb8c0f9e59a375111da84547[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 21:43:46 2021 +0200
+
+    fixed bishop move validation to worl in \ direction
+
+[33mcommit 4009d51345a2ccd74da26f218accf953b992a975[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 13 21:06:49 2021 +0200
+
+    fixed pawn movement
+
+[33mcommit 0a7f83a4ffc32a149347820838ef3a30a6d4cbd4[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 13 20:39:58 2021 +0200
+
+    fixed Pawn movement
+
+[33mcommit 1e16e3a21c023417406a0f948a606117c3b45ee2[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 20:03:44 2021 +0200
+
+    fixed gui message length
+
+[33mcommit 95972c912b1d4df3c16fee3f7f17e38725f88564[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 19:51:13 2021 +0200
+
+    added GUI auto opening
+
+[33mcommit 4dabc740c7a75664a4d4c0777c5ce9b51f73d91f[m
+Author: 328193602 <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 09:49:32 2021 -0800
+
+    added GUI auto opening
+
+[33mcommit 1438d137d827991ac4a5df5ba2220d60c99d3178[m
+Merge: 80941c7 189a282
+Author: 328193602 <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 09:27:18 2021 -0800
+
+    Merge branch 'master' of https://gitlab.com/yehuda_elyasaf_advanced_programmin_2022/checkmateproject7
+
+[33mcommit 80941c77d699f630933a7e2f478205ee921100e7[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 19:26:50 2021 +0200
+
+    made function Board::getBoard const
+
+[33mcommit a72e82b7097640f308886362dd4af7d2569f91bd[m
+Author: 328193602 <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 09:24:54 2021 -0800
+
+    connected code to GUI
+
+[33mcommit 189a282a21f7b4ef16ac5885979785f8a4232eba[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 13 19:23:08 2021 +0200
+
+    added function guitStr in game class
+
+[33mcommit 08610561ea2195828d6acb34270e27dc17b4e95d[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 13 18:46:18 2021 +0200
+
+    added pipe files
+
+[33mcommit 96dafb5b8c574a9f91bccde837eed1e5680b3933[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 18:32:01 2021 +0200
+
+    added files which weren't committed successfully
+
+[33mcommit 058208edc175ae7df0ce3b52b591f8fdab8b6f3d[m
+Author: 328193602 <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 08:28:51 2021 -0800
+
+    adde define REMOVE_ZERO
+
+[33mcommit 448b975230db1d3143a9557e624f0a93af463f19[m
+Author: 328193602 <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 08:25:55 2021 -0800
+
+    added comments
+
+[33mcommit 08bd65faf386788f7c0b50052afd77e9fa6d0ba3[m
+Merge: 4caeb01 9758753
+Author: 328193602 <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 08:18:59 2021 -0800
+
+    Merge branch 'master' of https://gitlab.com/yehuda_elyasaf_advanced_programmin_2022/checkmateproject7
+
+[33mcommit 4caeb01091dbf04174c85d38a279abf35a073518[m
+Author: 328193602 <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 08:18:30 2021 -0800
+
+    wrote function Bishop::validMove
+
+[33mcommit 9758753efc20a795df2c2ff5f1632dbb854ead70[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 13 18:17:22 2021 +0200
+
+    fixed game move bug
+
+[33mcommit c0f8e2e71cc2c47e0fe205bc1ce07f48f073df73[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 13 17:54:04 2021 +0200
+
+    fixed movePiece
+
+[33mcommit 6b429ae6fb314fbceadc56c3290783a702903146[m
+Merge: 24db973 adfa304
+Author: 328193602 <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 07:34:56 2021 -0800
+
+    Merge branch 'master' of https://gitlab.com/yehuda_elyasaf_advanced_programmin_2022/checkmateproject7
+
+[33mcommit adfa304853febf61fca6b3087ed70048c6b91d92[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 13 17:30:43 2021 +0200
+
+    fixed getColor and deleted isWhite function
+
+[33mcommit 24db97362e463fa7ed68bddd0b8b6c6343b647a9[m
+Author: 328193602 <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 13 07:29:40 2021 -0800
+
+    made function Rook::validMove more mudular
+
+[33mcommit 9c33d6381c6d5cc43db3b09702f4c43cc7765055[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 13 17:27:23 2021 +0200
+
+    fixed colors
+
+[33mcommit 5dafb41efcfa278d2345fd7fb7c5343692b31ba4[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 13 17:22:11 2021 +0200
+
+    added getter for piece color
+
+[33mcommit f65b420310c71d1f4068b0b011e02b47f53b30d0[m
+Merge: 65786c8 0a0b1fe
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Thu Dec 9 01:37:52 2021 +0200
+
+    Merge branch 'master' of https://gitlab.com/yehuda_elyasaf_advanced_programmin_2022/checkmateproject7
+
+[33mcommit 65786c8e340645c756011c5f0be7575eb78e8596[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Thu Dec 9 01:36:44 2021 +0200
+
+    .
+
+[33mcommit 0a0b1fe86128b23cbc3d0d8f87a687147fe8ee48[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Wed Dec 8 14:46:32 2021 +0200
+
+    fixed bug: move function returned valid instead of type
+
+[33mcommit c51b315d337109f127ca3094113e184d1cededde[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Wed Dec 8 13:22:09 2021 +0200
+
+    added visual printing to cli interface
+
+[33mcommit a98df6612ccabc25386d3293ec3f8310c4c62742[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Wed Dec 8 10:52:11 2021 +0200
+
+    fixed move function in Game class
+
+[33mcommit 8ae30529216287612e6e9b0aa48f6309cb28ac8c[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Wed Dec 8 00:49:45 2021 +0200
+
+    changed Y to be the forst value in 2n array
+
+[33mcommit 2c682670df0d7dbfd9f796174c484300324698e5[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Wed Dec 8 00:40:02 2021 +0200
+
+    changed equalation of pointer to "nullptr" because I don't use ptr* == - in c++
+
+[33mcommit bd0059519451a89ec625fbcb35a3657f87f86766[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Wed Dec 8 00:28:07 2021 +0200
+
+    updated function Game::moveType to check if piece isn't nullptr before accessing it
+
+[33mcommit 088676be4c5190c6fa1a859efb6007c67749abb9[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Wed Dec 8 00:15:09 2021 +0200
+
+    flipped board because the white is in the bottom side
+
+[33mcommit f6b7ef4b96df75bdc60ea428b1fb593b344c4ded[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Wed Dec 8 00:14:30 2021 +0200
+
+    wrote a short checking main
+
+[33mcommit e091b4c85a4dfd6862586f274326626c27a3a346[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 23:55:51 2021 +0200
+
+    updated function Game::findPiece to check if piece isn't nullptr before accessing it
+
+[33mcommit 8d31024406aaa098dfb9015f4238affe1f0f83e1[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 23:47:27 2021 +0200
+
+    updated function Rook::validMove to return true of the path is empty
+
+[33mcommit 1dd461acd2b676e84cacb2f5d0cc425ab8a6550f[m
+Merge: ffdcb8f c7e9a0c
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 23:40:36 2021 +0200
+
+    Merge branch 'master' of https://gitlab.com/yehuda_elyasaf_advanced_programmin_2022/checkmateproject7
+
+[33mcommit ffdcb8fff0be41cadd3205cfc0153336ab2dc4ef[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 23:40:10 2021 +0200
+
+    updated function Rook::validMove to check if the path is empty
+
+[33mcommit c7e9a0cb24d84695102bb0ddc30d1235827d318b[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 22:57:03 2021 +0200
+
+    Updated uml for game class
+
+[33mcommit 21b7dfa92964ef9b5fd1a7ce2de051bfed6ffe62[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 22:46:58 2021 +0200
+
+    fixed bugs
+
+[33mcommit 8f3f7c3ff58a523a2386e0d1185f985543bdf886[m
+Merge: b0574d8 81cb970
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 22:42:24 2021 +0200
+
+    synced git
+
+[33mcommit b0574d8aa017a7971fa1dd98c4e6b11cd704684f[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 22:31:54 2021 +0200
+
+    finished Game class
+
+[33mcommit 81cb9705219a4e02772e5b02b285d7d8cfa27c02[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 22:16:23 2021 +0200
+
+    wrote function Board::movePiece
+
+[33mcommit c9b97bbaf6d7b03d05738ea1f443a4a6ecd69fe8[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 21:43:26 2021 +0200
+
+    updated Main's includes
+
+[33mcommit e81d22898e45842cad917a43e0b12d39b2ab02ef[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 21:43:06 2021 +0200
+
+    added virtual inheritance to Queen
+
+[33mcommit 80adb2ff967945ab4852476adf0775ba79bd6e91[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 21:36:10 2021 +0200
+
+    added Main file
+
+[33mcommit e43b6e5747da37fccdb1fba047cc91734ffa63b9[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 21:30:05 2021 +0200
+
+    changed define NULL_PLAYER to be included in enum
+
+[33mcommit c76df1c1195dfd65d12ae31eb886110e83db9a77[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 21:28:17 2021 +0200
+
+    changed Queen to inherit from Piece
+
+[33mcommit afee47218dd74c7e16f38c31266972063fa5b78a[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 21:23:40 2021 +0200
+
+    changed queen's functions to be public
+
+[33mcommit dac81d4d304e2e33bf96b2837533451e4cb805f2[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 21:21:16 2021 +0200
+
+    added name to parameter Board in all pieces sons' validMove function
+
+[33mcommit 6e957a7b61b584b533aa4ee187888904d61b1e3c[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 19:47:17 2021 +0200
+
+    added c'tor for position that accepts ints
+
+[33mcommit 499d03a1b9532216c3ff46767c8bc9e772de7ac3[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 19:38:43 2021 +0200
+
+    fixed pawn validMove function
+
+[33mcommit c0fdb227954e6d0439ba1416095d124de6ca9135[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 19:04:02 2021 +0200
+
+    added board parameter to all validMove functions
+
+[33mcommit 9fbb52ffeac19710ce4013152f8e99f38fd3637e[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 18:31:37 2021 +0200
+
+    in uml, added board parameter to all validMove functions
+
+[33mcommit 050dbcc5c10fae3ac294d16210d537bf84d3250f[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 16:06:28 2021 +0200
+
+    made operator[] const
+
+[33mcommit 3b6f6738e1d1579ab1cf37358f6c0ae7ab6ce189[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 15:17:51 2021 +0200
+
+    Created Game c'tors
+
+[33mcommit f5eeaadcda538325387ad38031d4ebc649ead959[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 14:55:43 2021 +0200
+
+    created Game class
+
+[33mcommit a44543f0316d0eebff3c37f2c3505c72b8980b1a[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 14:44:53 2021 +0200
+
+    turned piece types and colors to enum
+
+[33mcommit 0c49f7f1d4d572316ad3c46ee9e37c4f28ca2805[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 14:11:01 2021 +0200
+
+    finished Pawn class
+
+[33mcommit ac2596f0f78ed984a10cb809abdc406be19cd958[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 14:10:36 2021 +0200
+
+    updated uml
+
+[33mcommit 2b60aadad03a8c6b14c3551e0e503816c72444da[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 12:34:31 2021 +0200
+
+    finished Knight class
+
+[33mcommit a5e476876e0456719234ebeafe9f40c28215277f[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 11:50:59 2021 +0200
+
+    finished King class
+
+[33mcommit eb1b80ab59164ee2e1c3c2b51cf5c83cf008566f[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 09:53:09 2021 +0200
+
+    added function Queen::getType()
+
+[33mcommit d907757c4ba035eb3b6de22e1abb8448db4b4e97[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 09:52:07 2021 +0200
+
+    added function Rook::getType()
+
+[33mcommit 58b4d8dabc751cbede949a8382f9c3f48bb13311[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 09:51:32 2021 +0200
+
+    added function Bishop::getType()
+
+[33mcommit d4d0b46db54a61de6d2792448fe0132d8c3b5716[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 09:46:31 2021 +0200
+
+    wrote function Board::getBoard
+
+[33mcommit c58614b2091841fb9ea133748df2081df7e22e84[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 09:45:19 2021 +0200
+
+    added declaration of function char getType() const to abstract claass Piece
+
+[33mcommit 6fe92d0a5cb460f0572a64f5e7285a73a5359dc3[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 09:42:55 2021 +0200
+
+    wrote function Board::getBoard
+
+[33mcommit 548b90836cee0fdc8902e1d1fe672be60606c815[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 08:53:08 2021 +0200
+
+    fixed reading of empty cell to '=' instead of '=='
+
+[33mcommit 6fe0d5859363248c167f24e24d669598adea7878[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 08:44:14 2021 +0200
+
+    wrote function Board::movePiece
+
+[33mcommit e5857280fcdfafcc624386e1faf620ab426a6c7c[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 08:36:03 2021 +0200
+
+    check2
+
+[33mcommit 971a6eb5c5d65ee9a0ea9bc498ad0624156144df[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 08:35:16 2021 +0200
+
+    check
+
+[33mcommit 0d609131f4e0214a62fed03afd17a847de4933d7[m
+Merge: e9fbaf9 1e99d65
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 00:21:11 2021 +0200
+
+    Merge branch 'master' of https://gitlab.com/yehuda_elyasaf_advanced_programmin_2022/checkmateproject7
+
+[33mcommit e9fbaf963b77f061ce3caf3832b2db327148d35e[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Tue Dec 7 00:20:10 2021 +0200
+
+    Position class
+
+[33mcommit 1e99d6585db6cc21bc4ea82069f6a6a38c84cba2[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 00:10:39 2021 +0200
+
+    wrote class queen
+
+[33mcommit 4d2ccbd9953e5b583337c451a7f13f2cf07ade43[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 00:08:55 2021 +0200
+
+    declared class queen
+
+[33mcommit db64a7ba631e4505176ac6cd50c3eccb0b09b467[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 00:07:01 2021 +0200
+
+    added Bishops c'tor
+
+[33mcommit d560c148574c6bdba419867ce27f0b4f1f640602[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 00:06:39 2021 +0200
+
+    added Bishops c'tor
+
+[33mcommit 6b8c0b13eb8b38d1b381536a1dad4c1fda458969[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 00:06:23 2021 +0200
+
+    added Bishops c'tor
+
+[33mcommit 61566eb76331d227a8956a4ade55e65c8b8e197f[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 00:05:38 2021 +0200
+
+    added Rook's c'tor
+
+[33mcommit 12115356be084a997c7784e7c9c4e5c0795a5dd5[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Tue Dec 7 00:03:05 2021 +0200
+
+    wrote Piece's c'tor
+
+[33mcommit b6a088426b3f29c6d823dd434c5cf93dce141e00[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 23:57:25 2021 +0200
+
+    wrote Board's d'tor
+
+[33mcommit 2a91e1bc076cfcd124c48e6d9e117baa469cde45[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 23:55:28 2021 +0200
+
+    wrote Board's c'tor
+
+[33mcommit 50834c39209f8c445975c6f186f476f6d32dbffa[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 23:47:00 2021 +0200
+
+    fixed UML's to show that Queen inherits Bishop and Rook
+
+[33mcommit 3ef1ace46961fe67eaa85f8eeb190867dbd5db23[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 23:24:50 2021 +0200
+
+    fixed project file's names
+
+[33mcommit 62113de3a827ae0b2dfc1947a4d959c92e92570f[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 23:23:59 2021 +0200
+
+    included class Position in Piece
+
+[33mcommit 93efa944019da697966e70facf6e1092c66cd0b9[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 23:22:01 2021 +0200
+
+    declared class Board
+
+[33mcommit 3d104f128109266b33b9d81866bb58e99aeea7cb[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 23:13:51 2021 +0200
+
+    wrote function Bishop::validMove
+
+[33mcommit e1bce9a48299e43e3ebaef1dd28e2dd6add97242[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 22:48:12 2021 +0200
+
+    wrote function Rook::validMove
+
+[33mcommit 60613993fb2aced5e1bb7f2474690f62cd8ee34a[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 22:38:38 2021 +0200
+
+    fixed UML's validation functions
+
+[33mcommit 0cd5c89e2827111364ee6dcd774fb56a9df98ecf[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 22:06:32 2021 +0200
+
+    declared class Rook
+
+[33mcommit 6e7048b9424eeb3f40fe588c1a75b3bb5ca6f700[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 22:00:38 2021 +0200
+
+    wrote Piece's d'tor
+
+[33mcommit 089072486730ef3c1505974733f6a7bc509ed739[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 21:59:26 2021 +0200
+
+    declared class Piece
+
+[33mcommit 2205c2cdbe9bdb41d93c9e215503be35db76a139[m
+Author: gavrielhahn@gmail.com <gavrielhahn@gmail.com>
+Date:   Mon Dec 6 21:26:52 2021 +0200
+
+    Created files for classes
+
+[33mcommit f4469bd79145e090c63571e73b068fd6f49627ef[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 20:53:36 2021 +0200
+
+    Added given files
+
+[33mcommit ddbe5109e8ae2fd76781d7cb3aa56fc20ad26fc3[m
+Author: Yehuda Elyasaf <hvusvvnkl12345@gmail.com>
+Date:   Mon Dec 6 20:45:52 2021 +0200
+
+    initial commit
